@@ -6,9 +6,9 @@
 В результатах запроса высвечивать для колонки ShippedDate вместо значений NULL строку ‘Not Shipped’, 
 для остальных значений высвечивать дату в формате по умолчанию. */
 
-SELECT OrderID AS OrderNumber, ShippedDate AS ShippedDate,
+SELECT OrderID AS OrderNumber, ShippedDate AS [Shipped Date],
 CASE 
-WHEN ShippedDate IS NULL THEN 'Not Shipped'
-END
+WHEN ShippedDate IS NULL THEN 'Not Shipped' 
+END AS [ShippedDate]
 FROM Orders
-WHERE ShippedDate IS NULL OR ShippedDate >= '1998-05-06'
+WHERE ShippedDate > '1998-05-06' OR ShippedDate IS NULL;
