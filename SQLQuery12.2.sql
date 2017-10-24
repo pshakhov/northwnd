@@ -6,6 +6,8 @@
 SELECT LastName
 FROM Employees AS e
 WHERE EXISTS
-  (SELECT LastName
+  (
+  SELECT LastName
    FROM Employees AS e
-   WHERE e.City = 'London');
+   WHERE e.City = 'London'
+   );

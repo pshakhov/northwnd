@@ -6,6 +6,6 @@ SELECT *
 FROM (
 SELECT FirstName, DATEDIFF(YEAR,BirthDate,GETDATE()) AS Age, LastName
 FROM Employees
-) as Aged
-WHERE Age>=50
+) AS Aged
+WHERE Age >= 50;
 

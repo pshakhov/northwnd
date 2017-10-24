@@ -1,4 +1,5 @@
-﻿/* 1.4	Написать запрос, который выводит только недоставленные заказы из таблицы Orders. 
+﻿
+/* 1.4	Написать запрос, который выводит только недоставленные заказы из таблицы Orders. 
 В результатах запроса высвечивать для колонки ShippedDate вместо значений NULL строку ‘Not Shipped’ – 
 использовать системную функцию CASЕ. 
 Запрос должен высвечивать только колонки OrderID и ShippedDate. */
@@ -9,4 +10,4 @@ WHEN ShippedDate IS NULL
 THEN 'Not shipped' 
 END AS "ShippedDate"
 FROM Orders
-WHERE ShippedDate IS NULL
+WHERE ShippedDate IS NULL;

@@ -1,5 +1,7 @@
-﻿/* 5.3	Необходимо вывести всю информацию о сотруднике( таблица Employees), чья фамилия точно не известна (King или Kong).*/
+﻿
+/* 5.3	Необходимо вывести всю информацию о сотруднике( таблица Employees), 
+чья фамилия точно не известна (King или Kong).*/
 
 SELECT *
 FROM Employees
-WHERE LastName LIKE 'K%ng';
+WHERE LastName LIKE 'K_ng';

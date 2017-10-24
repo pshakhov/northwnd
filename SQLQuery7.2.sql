@@ -1,4 +1,5 @@
-﻿/* 7.2 По таблице Orders найти количество заказов, сделанных каждым продавцом. 
+﻿
+/* 7.2 По таблице Orders найти количество заказов, сделанных каждым продавцом. 
 Заказ для указанного продавца – это любая запись в таблице Orders, 
 где в колонке EmployeeID задано значение для данного продавца. 
 В результатах запроса надо высвечивать колонку с именем продавца 
@@ -11,9 +12,11 @@
 
 
 SELECT COUNT(OrderID) AS Amount, EmployeeID,
-(SELECT CONCAT(LastName, ' ', FirstName)
+(
+SELECT CONCAT(LastName, ' ', FirstName)
 FROM Employees AS emp
-WHERE emp.EmployeeID = ord.EmployeeID) AS [Seller] 
+WHERE emp.EmployeeID = ord.EmployeeID
+) AS [Seller] 
 FROM Orders AS ord
 GROUP BY ord.EmployeeID
 ORDER BY COUNT(ord.OrderID) DESC;

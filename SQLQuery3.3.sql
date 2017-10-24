@@ -6,4 +6,4 @@
 
 SELECT DISTINCT Country
 FROM Customers 
-ORDER BY Country DESC
+ORDER BY Country DESC;

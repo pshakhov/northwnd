@@ -3,4 +3,4 @@
 Выводить только название продукта и цену на него. Использовать функцию CONVERT. */
 
 SELECT ProductName, CONVERT(int, UnitPrice) AS UnitPrice
-FROM Products
+FROM Products;

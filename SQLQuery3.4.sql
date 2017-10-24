@@ -9,4 +9,4 @@
 
 SELECT City, LastName, BirthDate
 FROM Employees
-ORDER BY City, LastName, BirthDate
+ORDER BY City, LastName, BirthDate;

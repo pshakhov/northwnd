@@ -1,4 +1,5 @@
-﻿/* 4.2	Выбрать всех заказчиков из таблицы Customers, у которых название страны начинается на буквы из диапазона a и g. 
+﻿
+/* 4.2	Выбрать всех заказчиков из таблицы Customers, у которых название страны начинается на буквы из диапазона a и g. 
 Использовать оператор BETWEEN. Запрос должен высвечивать только колонки CustomerID и Country и отсортирован по Country.
 Почему работает запрос с условием строчного регистра букв a и g – в БД страны начинаются с заглавной буквы?. 
 
@@ -6,5 +7,5 @@
 
 SELECT CustomerID, Country
 FROM Customers
-WHERE Country BETWEEN 'a' AND 'g'
-ORDER BY Country
+WHERE Country BETWEEN 'a' AND 'h'
+ORDER BY Country;

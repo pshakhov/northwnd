@@ -1,3 +1,4 @@
+
 /* 8.3.	Выбрать поставщиков и названия продуктов, для продуктов категории Seafood. */
 
 
@@ -10,4 +11,4 @@ ON s.SupplierID = p.SupplierID
 INNER JOIN
 Categories AS c
 ON c.CategoryID = p.CategoryID
-WHERE c.CategoryName = 'Seafood'
+WHERE c.CategoryName = 'Seafood';
