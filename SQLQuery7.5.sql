@@ -4,6 +4,8 @@
 В колонках должны быть высвечены имена из колонки LastName. 
 Высвечены ли все продавцы в этом запросе? */
 
-SELECT DISTINCT e.LastName AS [User Name], s.ContactName AS Boss
-FROM Employees AS e, Suppliers AS s
-WHERE e.ReportsTo = s.SupplierID;
+    SELECT e1.LastName AS [User Name], e2.LastName As Boss
+    FROM Employees AS e1
+    JOIN
+    Employees AS e2
+        ON e1.ReportsTo = e2.EmployeeID;
